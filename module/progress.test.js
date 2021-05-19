@@ -1,23 +1,23 @@
-/**
- * @module Progress 载入中模块
- * @method this.setTitle
- * @method this.setStatus
- * @method this.done
- * @method this.close
- */
-
-const { _msg } = require('./_msg')
-const { $progress } = require('./_elements.js')
-const sleep = require('../util/sleep')
+var _msg = (s) => s
+var sleep = (delay) => {
+  if (isNaN(Number(delay)) || delay < 0) delay = 0
+  return new Promise((next) => {
+    setTimeout(next, delay)
+  })
+}
+var $progress =
+  '<div class="ipe-progress" style="width: 100%"><div class="ipe-progress-bar"></div></div>'
 
 class Progress {
+  #getThis = () => this
+
   /**
    * @constructor
    * @param {String} title
    */
   constructor(title) {
     this.title = title || 'Loading...'
-    this.getThis = () => this
+    // this.getThis = () => this
 
     // 处理模态框
     this.modal = ssi_modal.createObject({})
@@ -41,7 +41,7 @@ class Progress {
     this.modal.setTitle(title)
   }
   setStatus(status) {
-    const self = this.getThis()
+    const self = getThis()
     if (status) {
       self.$progress.addClass('done')
     } else {
@@ -62,6 +62,4 @@ class Progress {
   }
 }
 
-module.exports = {
-  Progress,
-}
+var p = new Progress('加载中……')

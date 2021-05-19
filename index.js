@@ -4,7 +4,7 @@
  * @name InPageEdit
  * @description A useful MediaWiki JavaScript Plugin written with jQuery
  * @author 机智的小鱼君 Dragon-Fish <dragon-fish@qq.com>
- * @url https://github.com/Dragon-Fish/InPageEdit-v2
+ * @url https://github.com/InPageEdit/InPageEdit
  */
 
 !(async function () {

@@ -1,9 +1,9 @@
-const version = require('../module/version');
+const version = require('../module/version')
 
-const { _msg } = require('../module/_msg');
-// const api = require('../module/api.json');
-const { versionInfo } = require('../module/versionInfo');
-const { specialNotice } = require('../module/specialNotice');
+const { _msg } = require('../module/_msg')
+// const api = require('../module/api');
+const { versionInfo } = require('../module/versionInfo')
+const { specialNotice } = require('../module/specialNotice')
 
 function updateNotice() {
   if (localStorage.getItem('InPageEditVersion') !== version) {
@@ -11,21 +11,23 @@ function updateNotice() {
       title: _msg('updatelog-update-success-title'),
       content: _msg('updatelog-update-success', version),
       className: 'in-page-edit',
-      buttons: [{
-        className: 'btn btn-primary',
-        label: _msg('updatelog-button-versioninfo'),
-        method(a, modal) {
-          localStorage.setItem('InPageEditVersion', version);
-          versionInfo();
-          modal.close();
-        }
-      }],
+      buttons: [
+        {
+          className: 'btn btn-primary',
+          label: _msg('updatelog-button-versioninfo'),
+          method(a, modal) {
+            localStorage.setItem('InPageEditVersion', version)
+            versionInfo()
+            modal.close()
+          },
+        },
+      ],
       closeAfter: {
         time: 10,
-        resetOnHover: true
+        resetOnHover: true,
       },
       onClose() {
-        localStorage.setItem('InPageEditVersion', version);
+        localStorage.setItem('InPageEditVersion', version)
         // ssi_modal.notify('', {
         //   className: 'in-page-edit',
         //   content: _msg('updatelog-after-close', `[${api.updatelogsUrl} ${api.updatelogsUrl}]`, `[${api.githubLink}/issues ${_msg('updatelog-file-issue')}]`),
@@ -40,14 +42,14 @@ function updateNotice() {
         //     }
         //   }]
         // });
-      }
-    });
+      },
+    })
   }
   if (localStorage.getItem('InPageEditNoticeId') !== _msg('noticeid')) {
-    specialNotice();
+    specialNotice()
   }
 }
 
 module.exports = {
-  updateNotice
+  updateNotice,
 }

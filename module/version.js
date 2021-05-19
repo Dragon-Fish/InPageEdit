@@ -1,3 +1,3 @@
-const version = require('../package.json').version;
+const version = require('../package.json').version
 
-module.exports = version;
+module.exports = version

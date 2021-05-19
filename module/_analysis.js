@@ -6,9 +6,8 @@ var api = require('./api.json')
  * @param {String} functionID 模块ID，例如 quick_edit
  */
 const _analysis = function(functionID) {
-  if (InPageEdit.doNotCollectMyInfo === true) {
-    // console.info('[InPageEdit] 我们已不再收集您使用插件的信息。');
-    // return;
+  if (preference.get('shareMyInfo') !== true) {
+    return
   }
   var submitdata = {
     url: config.wgServer + config.wgArticlePath.replace('$1', ''),

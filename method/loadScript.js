@@ -3,10 +3,10 @@ var loadScript = function (src, noCache) {
     url: src,
     dataType: 'script',
     crossDomain: true,
-    cache: !noCache
-  });
+    cache: !noCache,
+  })
 }
 
 module.exports = {
-  loadScript
+  loadScript,
 }
