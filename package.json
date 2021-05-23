@@ -13,7 +13,7 @@
   },
   "scripts": {
     "build": "webpack && set MINIFY=1 webpack",
-    "lint": "eslint ./index.js ./module/*.js ./method/*.js",
+    "lint": "eslint ./src",
     "dev": "webpack --watch --o ./dev/[name].js",
     "clear": "wsl rm -rf ./dist",
     "bump": "yarn lint && yarn clear && yarn build && bump --nopkg"

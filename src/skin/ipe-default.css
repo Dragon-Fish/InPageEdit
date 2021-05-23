@@ -595,7 +595,7 @@
 .in-page-edit label input[type="checkbox"]:checked + span::before {
   content: "\a0";
   background-color: #36c;
-  background-image: url(https://cdn.jsdelivr.net/gh/dragon-fish/inpageedit-v2@master/src/images/Checkmark.svg);
+  background-image: url(https://cdn.jsdelivr.net/gh/dragon-fish/inpageedit-v2@master/src/assets/checkmark.svg);
   background-repeat: no-repeat;
 }
 

@@ -1,0 +1,10 @@
+{
+  "aboutUrl": "https://ipe.js.org/",
+  "analysis": "https://analysis.ipe.wjghj.cn/api/submit",
+  "analysisUrl": "https://blog.wjghj.cn/inpageedit-v2/analysis/",
+  "githubLink": "https://github.com/InPageEdit/InPageEdit",
+  "pluginCDN": "https://ipe-plugins.js.org",
+  "pluginGithub": "https://github.com/InPageEdit/InPageEdit-Plugins",
+  "specialNotice": "https://ipe-plugins.js.org/specialNotice.json",
+  "updatelogsUrl": "https://ipe.js.org/update/"
+}

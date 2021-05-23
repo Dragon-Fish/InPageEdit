@@ -1,30 +1,32 @@
-[![InPageEdit Logo](https://ipe.js.org/images/logo/InPageEdit.png)](https://ipe.js.org/images/logo/InPageEdit.png)
+# [![InPageEdit Logo](https://ipe.js.org/images/logo/InPageEdit.png)](https://ipe.js.org/images/logo/InPageEdit.png)
 
-**InPageEdit**是由机智的小鱼君编写的一款 MediaWiki 多功能插件，它主要基于 jQuery 编写。具有较好的移动设备支持以及~~毫无卵用~~的五彩斑斓设计。主要功能旨在使许多 MediaWiki 的功能在不打开新标签页的情况下完成(包括但不限于编辑)，极大加快维护 wiki 的速度。插件采用模块化设计，提供许多 API 可以自由调用，详见 [API - InPageEdit Documentations](https://ipe.js.org/develop/api.html)
+**English** · [Simplified Chinese](https://github.com/InPageEdit/InPageEdit/blob/master/README-zh-CN.md)
 
-## 特色功能
+**InPageEdit** is a MediaWiki plugin with muliple functionalities for advanced MediaWiki users, based on jQuery and developed by 机智的小鱼君 (Dragon-Fish). It is equipped with good mobile optimization and ~~useless~~ colorful design. The main purpose is allowing users to use many MediaWiki functions without opening a new tab (including but not only "editing"), which speeds up the wiki maintaining process. The plugin is also modular designed, and providing many APIs, which you can learn about it here: [API - InPageEdit Documentations](https://ipe.js.org/en/develop/api.html)
 
-> 详见 [InPageEdit Documentations](https://ipe.js.org/)
+## Features
 
-## 快速上手
+> Main article: [InPageEdit Documentations](https://ipe.js.org/en/)
 
-[![](https://data.jsdelivr.com/v1/package/gh/dragon-fish/inpageedit-v2/badge)](https://www.jsdelivr.com/package/gh/dragon-fish/inpageedit-v2)
-[![](https://data.jsdelivr.com/v1/package/npm/mediawiki-inpageedit/badge)](https://www.jsdelivr.com/package/npm/mediawiki-inpageedit)
+## Get Started
 
-在*个人 JS 页*添加以下代码：
+[![jsDelivr Usage Stats](https://data.jsdelivr.com/v1/package/gh/dragon-fish/inpageedit-v2/badge)](https://www.jsdelivr.com/package/gh/dragon-fish/inpageedit-v2)
+[![jsDelivr Usage Stats](https://data.jsdelivr.com/v1/package/npm/mediawiki-inpageedit/badge)](https://www.jsdelivr.com/package/npm/mediawiki-inpageedit)
+
+Add the following to your *personal JS page*:
 
 ```javascript
 mw.loader.load("https://cdn.jsdelivr.net/npm/mediawiki-inpageedit@latest/dist/InPageEdit.min.js");
 ```
 
-**注意**：在保存之后，您可能需要清除浏览器缓存才能看到所作出的变更的影响。
+**Note**: After publishing, you may have to bypass your browser's cache to see the changes.
 
-- Firefox 或 Safari：按住 Shift 的同时单击刷新，或按 Ctrl-F5 或 Ctrl-R（Mac 为 ⌘-R）
-- Google Chrome：按 Ctrl-Shift-R（Mac 为 ⌘-Shift-R）
-- Internet Explorer：按住 Ctrl 的同时单击刷新，或按 Ctrl-F5
-- Opera：前往菜单 → 设置（Mac 为 Opera → Preferences），然后隐私和安全 → 清除浏览数据 → 缓存的图片和文件。
+- Firefox / Safari: Hold Shift while clicking Reload, or press either Ctrl-F5 or Ctrl-R (⌘-R on a Mac)
+- Google Chrome: Press Ctrl-Shift-R (⌘-Shift-R on a Mac)
+- Internet Explorer / Edge: Hold Ctrl while clicking Refresh, or press Ctrl-F5
+- Opera: Press Ctrl-F5.
 
-> 详见 [Quick Start Guide - InPageEdit](https://ipe.js.org/guide/install/quick-start.html)
+> 详见 [Quick Start Guide - InPageEdit](https://ipe.js.org/en/guide/install/quick-start.html)
 
 ## Supported languages
 
@@ -39,9 +41,9 @@ mw.loader.load("https://cdn.jsdelivr.net/npm/mediawiki-inpageedit@latest/dist/In
 - ‪**中文(简体)‬ (zh-hans)**
 - 中文(繁體)‬ (zh-hant)
 
-Help us to translate InPageEdit: [Fandom Developer Wiki](https://dev.fandom.com/wiki/Special:BlankPage/I18nEdit/InPageEdit-v2), [Miraheze Wiki](https://ipe.miraheze.org/wiki/Special:BlankPage/I18nEdit/InPageEdit-v2)
+Help us to translate InPageEdit: [PoEditor](https://poeditor.com/join/project?hash=IxoIqy64z0)
 
-<hr/>
+----
 
 InPageEdit is a useful MediaWiki JavaScript Plugin written with jQuery, written by [机智的小鱼君/Dragon Fish](https://wjghj.cn/wiki/机智的小鱼君)
 
